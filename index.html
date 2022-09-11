@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
+    <title>Regsitro de Pacientes</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registro de Pacientes</h1>
+      <form>
+        <div class="container-datosinputs">
+        <fieldset class="container-datosp">
+          <h3>Datos del paciente</h3>
+          <input type="text" placeholder="Nombres" /><br />
+          <input type="text" placeholder="Apellido" /><br />
+          <input type="text" inputmode="tel" minlength="1" maxlength="10" placeholder="DNI" /><br />
+          <input type="text" placeholder="Edad" /><br />
+          <input type="text" placeholder="Peso" /><br />
+          <input list="Genero" placeholder="Genero" />
+          <datalist id="Genero">
+            <option>Masculino</option>
+            <option>Femenino</option></datalist
+          ><br />
+        </fieldset>
+
+        <fieldset>
+          <h3>Ingreso</h3>
+          <input list="N de cama" placeholder="N° de Cama" />
+          <datalist id="N de cama">
+            <option>Cama 1</option>
+            <option>Cama 2</option>
+            <option>Cama 3</option>
+            <option>Cama 4</option>
+            <option>Cama 5</option>
+            <option>Cama 6</option>
+            <option>Cama 7</option>
+            <option>Cama 8</option>
+            <option>Cama 9</option>
+            <option>Cama 10</option></datalist
+          ><br />
+          <label>Fecha</label><br>
+          <input class="fecha" type="date" /><br>
+          <label>Hora</label><br>
+          <input class="hora" type="time" /><br>
+          <input type="text" placeholder="Diagnostico" /><br />
+          <input list="Motivo" placeholder="Motivo de ingreso" />
+          <datalist id="Motivo">
+            <option>Respiratorio</option>
+            <option>Cardiaco</option>
+            <option>Quirurgico</option>
+            <option>Gastrico</option>
+            <option>Neurologico</option>
+            <option>Nefrologico</option>
+            <option>Oncologia</option>
+            <option>Traumatologia</option>
+            <option>Quemaduras</option></datalist
+          ><br />
+          <input list="Procedencia" placeholder="Lugar de Procedencia" />
+          <datalist id="Procedencia">
+            <option>Guardia</option>
+            <option>Internado</option>
+            <option>Oncologia</option>
+            <option>Quirofano</option>
+            <option>Otras Instituciones Hospitalarias</option>
+            <option>Otros</option>
+          </datalist><br>
+          <input type="text" placeholder="¿Cuales?" /><br />
+        </fieldset>
+      </div>
+      <h3>Procedimientos antes del ingreso</h3>
+      <div class="container-proingreso">
+        <fieldset>
+          <p><b>Oxigenoterapia</b></p>
+          <label>Sin oxigenoterapia</label>
+          <input type="checkbox" value="Sin oxigenoterapia"/><br />
+          <label>Narinas</label>
+          <input type="checkbox" value="Narinas" /><br />
+          <label>Mascara Común</label>
+          <input type="checkbox" value="Mascara común" /><br />
+          <label>Mascara con Reservorio</label>
+          <input type="checkbox" value="Mascara con Reservorio" /><br />
+          <label>OAF</label>
+          <input type="checkbox" value="OAF" /><br />
+          <label>BPAP</label>
+          <input type="checkbox" value="BPAP" /><br />
+          <label>VNI</label>
+          <input type="checkbox" value="VNI" /><br />
+          <label>AVM</label>
+          <input type="checkbox" value="AVM" /><br />
+        </fieldset>
+        <fieldset class="container-accesos1">
+          <p><b>Accesos Venosos</b></p>
+          <label>CVP</label>
+          <input type="checkbox" value="CVP" /><br />
+          <label>PICC</label>
+          <input type="checkbox" value="PICC" /><br />
+          <label>CVC</label>
+          <input type="checkbox" value="CVC" /><br />
+          <label>Flebotomia</label>
+          <input type="checkbox" value="Flebotomia" /><br />
+          <label>Cateter Arterial</label>
+          <input type="checkbox" value="Cateter Arterial" /><br />
+          <label>Intraosea</label>
+          <input type="checkbox" value="IntraOsea" /><br />
+          <label>Cateter Oncologico</label>
+          <input type="checkbox" value="Caterter Oncologico" /><br />
+          <label>Otros</label>
+          <input type="checkbox" value="Otros" /><br />
+          <input type="text" placeholder="¿Cuales?" /><br />
+        </fieldset>
+        <fieldset class="container-procedimientosinvasivos1">
+          <p><b>Procedimientos Invasivos</b></p>
+          <label>Sondaje NasoGastrica (SNG)</label>
+          <input type="checkbox" value="SNG" /><br />
+          <label>Sondaje OroGastrica (SOG)</label>
+          <input type="checkbox" value="SOG" /><br />
+          <label>Boton Gastrico</label>
+          <input type="checkbox" value="BG" /><br />
+          <label>Sonda Vesical</label>
+          <input type="checkbox" value="SV" /><br />
+          <label>Sondaje Intermitente</label>
+          <input type="checkbox" value="Sondaje Intermitente" /><br />
+          <label>Drenaje Pleural</label>
+          <input type="checkbox" value="DP" /><br />
+          <label>Punción Lumbar</label>
+          <input type="checkbox" value="CVP" /><br />
+          <label>Intubación Endotraqueal</label>
+          <input type="checkbox" value="Intubación Endotraqueal" /><br />
+          <label>Presión Intracraneal (PIC)</label>
+          <input type="checkbox" value="PIC" /><br />
+          <label>Drenaje Ventricular</label>
+          <input type="checkbox" value="DV" /><br />
+          <label>Cateter Peritoneal</label>
+          <input type="checkbox" value="CP" /><br />
+          <label>Otros</label>
+          <input type="checkbox" value="Otros" /><br />
+          <input type="text" placeholder="¿Cuales?" /><br />
+        </fieldset>
+      </div>
+      <h3>Procedimientos en UTIP/UCIM</h3>
+      <div class="container-utipinputs">
+        <fieldset>
+          <p><b>Oxigenoterapia</b></p>
+          <label>Sin oxigenoterapia</label>
+          <input type="checkbox" value="Sin oxigenoterapia"/><br />
+          <label>Narinas</label>
+          <input type="checkbox" value="Narinas" /><br />
+          <label>Mascara Común</label>
+          <input type="checkbox" value="Mascara común" /><br />
+          <label>Mascara con Reservorio</label>
+          <input type="checkbox" value="Mascara con Reservorio" /><br />
+          <label>OAF</label>
+          <input type="checkbox" value="OAF" /><br />
+          <label>BPAP</label>
+          <input type="checkbox" value="BPAP" /><br />
+          <label>VNI</label>
+          <input type="checkbox" value="VNI" /><br />
+          <label>AVM</label>
+          <input type="checkbox" value="AVM" /><br />
+        </fieldset>
+        <fieldset>
+          <p><b>Accesos Venosos</b></p>
+          <label>CVP</label>
+          <input type="checkbox" value="CVP" /><br />
+          <label>PICC</label>
+          <input type="checkbox" value="PICC" /><br />
+          <label>CVC</label>
+          <input type="checkbox" value="CVC" /><br />
+          <label>Flebotomia</label>
+          <input type="checkbox" value="Flebotomia" /><br />
+          <label>Cateter Arterial</label>
+          <input type="checkbox" value="Cateter Arterial" /><br />
+          <label>Intraosea</label>
+          <input type="checkbox" value="IntraOsea" /><br />
+          <label>Cateter Oncologico</label>
+          <input type="checkbox" value="Caterter Oncologico" /><br />
+          <label>Otros</label>
+          <input type="checkbox" value="Otros" /><br />
+          <input type="text" placeholder="¿Cuales?" /><br />
+        </fieldset>
+        <fieldset>
+          <p><b>Procedimientos Invasivos</b></p>
+          <label>Sondaje NasoGastrica (SNG)</label>
+          <input type="checkbox" value="SNG" /><br />
+          <label>Sondaje OroGastrica (SOG)</label>
+          <input type="checkbox" value="SOG" /><br />
+          <label>Boton Gastrico</label>
+          <input type="checkbox" value="BG" /><br />
+          <label>Sonda Vesical</label>
+          <input type="checkbox" value="SV" /><br />
+          <label>Sondaje Intermitente</label>
+          <input type="checkbox" value="Sondaje Intermitente" /><br />
+          <label>Drenaje Pleural</label>
+          <input type="checkbox" value="DP" /><br />
+          <label>Punción Lumbar</label>
+          <input type="checkbox" value="CVP" /><br />
+          <label>Intubación Endotraqueal</label>
+          <input type="checkbox" value="Intubación Endotraqueal" /><br />
+          <label>Presión Intracraneal (PIC)</label>
+          <input type="checkbox" value="PIC" /><br />
+          <label>Drenaje Ventricular</label>
+          <input type="checkbox" value="DV" /><br />
+          <label>Cateter Peritoneal</label>
+          <input type="checkbox" value="CP" /><br />
+          <label>Otros</label>
+          <input type="checkbox" value="Otros" /><br />
+          <input type="text" placeholder="¿Cuales?" /><br />
+        </fieldset>
+      </div>
+        <fieldset>
+          <h3>Fecha de Egreso</h3>
+          <input type="date">
+          <input list="Derivacion" placeholder="Derivacón" />
+          <datalist id="Derivacion">
+            <option>Alta Hospitalaria</option>
+            <option>Internado</option>
+            <option>Oncologia</option>
+            <option>Obito</option>
+            <option>Otras Instituciones Hospitalarias</option>
+          </datalist><br>
+        </fieldset>
+        <button type="submit">Enviar y guardar</button>
+      </form>
+    </div>
+  </body>
+</html>
