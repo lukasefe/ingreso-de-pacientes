@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body{
     background-color: transparent;
     margin: 100px 50px;
     border-radius: 30px;
-    border: 2px solid purple;
+    border: 5px solid purple;
    
 
 }
@@ -18,22 +19,25 @@ h1{
     color: white;
     padding: 10px;
     margin: 0px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
-form{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
 h3{
     text-align: center;
     padding-left: 5px;
     text-decoration: underline;
+    margin:15px 0px;
 }
+
 .container-datosinputs{
   margin: 0px;
   padding:0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0px 0px;
+}
+input.datospersonales{
+  margin-bottom: 10px;
 }
 .container-proingreso{
   margin: 0px;
@@ -48,12 +52,12 @@ h3{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-input{
+.inputsdatostexto{
     font-size: 15px;
     text-align: left;
     padding:15px 50px 15px 25px;
-    width:15px 450px 15px 450px;
-    margin: 5px;
+    width:250px;
+    margin: 10px 5px;
     border: none;
     border-radius: 20px;
     border-bottom: 1px solid black;
@@ -64,7 +68,7 @@ input.fecha{
     font-size: 15px;
     text-align: center;
     padding:15px 10px;
-    width:250px;
+    width:300px;
     margin: 5px;
     border: none;
     border-radius: 20px;
@@ -75,7 +79,7 @@ input.hora{
     font-size: 15px;
     text-align: center;
     padding:15px 10px;
-    width:250px;
+    width:300px;
     margin: 5px;
     border: none;
     border-radius: 20px;
@@ -132,7 +136,66 @@ button:hover{
   font-weight: bold;
   border: 2px solid purple;
 }
-
+footer{
+  background-color: purple;
+  position:absolute;
+  width: 100%;
+}
+.copyfooter{
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  font-size: 25px;
+}
+.footercontacto{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0xp;
+}
+.container-iconos{
+  text-align: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  padding-bottom: 100px;
+}
+a{
+  text-align: center;
+  width:60px;
+  padding: 0px;
+  margin:0px;
+}
+/*.a-gmail-icono{
+    text-align: left;
+    width:60px;
+    height: 80px;
+    padding: 0px;
+    padding-top: 5px;
+    margin-left: 600px;
+}*/
+a.gmail{
+  padding-top: 5px;
+  margin-right: 0px;
+}
+.a-izquierda{
+  margin-left:490px;
+}
+.a-derecha{
+  margin-right:0px;
+}
+.iconos{
+  width:50px;
+  height: 40px;
+  position: absolute;
+}
+.github{
+  margin-left: 620px;
+}
+.linkedin{
+  margin-left:690px;
+}
 /*BREACKPOINTS
 @media (max-width: 320px){
   body{

@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css" />
-    <title>Regsitro de Pacientes</title>
+    <title>Registro de Ingreso de Pacientes</title>
   </head>
   <body>
+    <main>
     <div class="container">
-      <h1>Registro de Pacientes</h1>
+      <h1>Registro de Ingreso de Pacientes</h1>
       <form>
         <div class="container-datosinputs">
         <fieldset class="container-datosp">
           <h3>Datos del paciente</h3>
-          <input type="text" placeholder="Nombres" /><br />
-          <input type="text" placeholder="Apellido" /><br />
-          <input type="text" inputmode="tel" minlength="1" maxlength="10" placeholder="DNI" /><br />
-          <input type="text" placeholder="Edad" /><br />
-          <input type="text" placeholder="Peso" /><br />
-          <input list="Genero" placeholder="Genero" />
-          <datalist id="Genero">
+          <input class="inputsdatostexto" type="text" placeholder="Nombres" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="Apellido" /><br />
+          <input class="inputsdatostexto" type="text" inputmode="tel" minlength="1" maxlength="10" placeholder="DNI" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="Edad" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="Peso" /><br />
+          <input class="inputsdatostexto" list="Genero" placeholder="Genero" />
+          <datalist class="inputsdatostexto" id="Genero">
             <option>Masculino</option>
             <option>Femenino</option></datalist
           ><br />
@@ -28,7 +29,7 @@
 
         <fieldset>
           <h3>Ingreso</h3>
-          <input list="N de cama" placeholder="N° de Cama" />
+          <input class="inputsdatostexto" list="N de cama" placeholder="N° de Cama" />
           <datalist id="N de cama">
             <option>Cama 1</option>
             <option>Cama 2</option>
@@ -42,11 +43,11 @@
             <option>Cama 10</option></datalist
           ><br />
           <label>Fecha</label><br>
-          <input class="fecha" type="date" /><br>
+          <input  class="fecha inputsdatostexto" type="date" /><br>
           <label>Hora</label><br>
-          <input class="hora" type="time" /><br>
-          <input type="text" placeholder="Diagnostico" /><br />
-          <input list="Motivo" placeholder="Motivo de ingreso" />
+          <input  class="hora inputsdatostexto" type="time" /><br>
+          <input class="inputsdatostexto" type="text" placeholder="Diagnostico" /><br />
+          <input class="inputsdatostexto" list="Motivo" placeholder="Motivo de ingreso" />
           <datalist id="Motivo">
             <option>Respiratorio</option>
             <option>Cardiaco</option>
@@ -58,7 +59,7 @@
             <option>Traumatologia</option>
             <option>Quemaduras</option></datalist
           ><br />
-          <input list="Procedencia" placeholder="Lugar de Procedencia" />
+          <input class="inputsdatostexto" list="Procedencia" placeholder="Lugar de Procedencia" />
           <datalist id="Procedencia">
             <option>Guardia</option>
             <option>Internado</option>
@@ -67,7 +68,7 @@
             <option>Otras Instituciones Hospitalarias</option>
             <option>Otros</option>
           </datalist><br>
-          <input type="text" placeholder="¿Cuales?" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="¿Cuales?" /><br />
         </fieldset>
       </div>
       <h3>Procedimientos antes del ingreso</h3>
@@ -109,7 +110,7 @@
           <input type="checkbox" value="Caterter Oncologico" /><br />
           <label>Otros</label>
           <input type="checkbox" value="Otros" /><br />
-          <input type="text" placeholder="¿Cuales?" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="¿Cuales?" /><br />
         </fieldset>
         <fieldset class="container-procedimientosinvasivos1">
           <p><b>Procedimientos Invasivos</b></p>
@@ -137,7 +138,7 @@
           <input type="checkbox" value="CP" /><br />
           <label>Otros</label>
           <input type="checkbox" value="Otros" /><br />
-          <input type="text" placeholder="¿Cuales?" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="¿Cuales?" /><br />
         </fieldset>
       </div>
       <h3>Procedimientos en UTIP/UCIM</h3>
@@ -179,7 +180,7 @@
           <input type="checkbox" value="Caterter Oncologico" /><br />
           <label>Otros</label>
           <input type="checkbox" value="Otros" /><br />
-          <input type="text" placeholder="¿Cuales?" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="¿Cuales?" /><br />
         </fieldset>
         <fieldset>
           <p><b>Procedimientos Invasivos</b></p>
@@ -207,13 +208,13 @@
           <input type="checkbox" value="CP" /><br />
           <label>Otros</label>
           <input type="checkbox" value="Otros" /><br />
-          <input type="text" placeholder="¿Cuales?" /><br />
+          <input class="inputsdatostexto" type="text" placeholder="¿Cuales?" /><br />
         </fieldset>
       </div>
         <fieldset>
           <h3>Fecha de Egreso</h3>
-          <input type="date">
-          <input list="Derivacion" placeholder="Derivacón" />
+          <input class="inputsdatostexto" type="date">
+          <input class="inputsdatostexto" list="Derivacion" placeholder="Derivacón" />
           <datalist id="Derivacion">
             <option>Alta Hospitalaria</option>
             <option>Internado</option>
@@ -225,5 +226,17 @@
         <button type="submit">Enviar y guardar</button>
       </form>
     </div>
+  </main>
+  <footer>
+    <h3 class="copyfooter">&copy; - Fernandez Lucas -</h3>
+    <h3 class="footercontacto">contaco:</h3>
+    <div class="container-iconos">
+    <a class="a-izquierda telefono" href="tel:+5403516207238" target="_blank"><img class="iconos"  src="ASSETS/ICONOS/telefono-inteligente (1).png" alt="contacto telefonico"></a>
+    <a class="a-gmail-icono gmail" href="mailto:lukasfernandez22@gmail.com" target="_blank"><img class="iconos"  src="ASSETS/ICONOS/gmail.png" alt="gmail"></a>
+    <a class="iconos github" href="https://github.com/lukasefe" target="_blank"><img class="iconos"  src="ASSETS/ICONOS/github.png" alt="github"></a>
+    <a class="iconos linkedin" href="https://www.linkedin.com/in/lukas-efe" target="_blank"><img class="iconos"  src="ASSETS/ICONOS/linkedin.png" alt="linkedin"></a>
+    <a class="a-derecha" href=""><img class="iconos"  src="ASSETS/ICONOS/facebook.png" alt="Facebook"></a>
+  </div>
+  </footer>
   </body>
 </html>
