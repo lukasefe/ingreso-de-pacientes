@@ -1,10 +1,38 @@
-
+html{
+  font-family: 'Josefin Sans', sans-serif;
+}
+header{
+  background-color: purple;
+  font-family: 'Josefin Sans', sans-serif;
+  width:100%;
+  height: 70px;
+  position:absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color:white;
+  justify-items: center;
+}
 body{
     margin: 0;
     padding: 0;
     background-image: linear-gradient( to right, rgb(245, 223, 245), rgb(243, 198, 243), rgb(252, 170, 252), rgb(238, 95, 238));
+    scroll-behavior: smooth;
 }  
-
+.container-menu{
+  padding-top: 25px;
+  margin-left: 100px;
+}
+h2.menu{
+  margin-left: 700px;
+}
+.menu{
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+  scroll-behavior: smooth;
+}
 .container{
     text-align: center;
     background-color: transparent;
@@ -55,6 +83,7 @@ input.datospersonales{
 .inputsdatostexto{
     font-size: 15px;
     text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
     padding:15px 50px 15px 25px;
     width:250px;
     margin: 10px 5px;
@@ -86,6 +115,9 @@ input.hora{
     border-bottom: 1px solid black;
    background-color:rgb(245, 223, 245);
 }
+.labels-fechahora{
+  color: purple;
+}
 label{
   font-size: 20px;
 }
@@ -93,7 +125,8 @@ label{
     margin: 5px 5px 5px 10px;
 }
 ::placeholder{background-color:transparent;
-color: rgb(80, 3, 80); text-align: center;}
+color: rgb(80, 3, 80); text-align: center;
+font-family:'Josefin Sans', sans-serif;}
 
 fieldset{
     border: none;
@@ -120,7 +153,7 @@ button{
     color: white;
     background-color: purple;
     padding: 15px;
-    margin: 0px 500px 20px 500px;
+    margin: 0px 525px 20px 475px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -140,14 +173,15 @@ footer{
   background-color: purple;
   position:absolute;
   width: 100%;
+  /*bottom:0;*/
 }
-.copyfooter{
+.copy-footer{
   text-align: center;
   text-decoration: none;
   color:white;
   font-size: 25px;
 }
-.footercontacto{
+.footer-contacto{
   text-align: center;
   text-decoration: none;
   color: white;
@@ -156,192 +190,13 @@ footer{
 }
 .container-iconos{
   text-align: center;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
+
 }
-a{
+
+span{
+  width: 70px;
   text-align: center;
-  width:60px;
-  padding: 0px;
-  margin:0px;
+  padding: 2px;
+  margin: 2px;
 }
-/*.a-gmail-icono{
-    text-align: left;
-    width:60px;
-    height: 80px;
-    padding: 0px;
-    padding-top: 5px;
-    margin-left: 600px;
-}*/
-a.gmail{
-  padding-top: 5px;
-  margin-right: 0px;
-}
-.a-izquierda{
-  margin-left:490px;
-}
-.a-derecha{
-  margin-right:0px;
-}
-.iconos{
-  width:50px;
-  height: 40px;
-  position: absolute;
-}
-.github{
-  margin-left: 620px;
-}
-.linkedin{
-  margin-left:690px;
-}
-/*BREACKPOINTS
-@media (max-width: 320px){
-  body{
-    width: 320px;
-  }
-    div.container{
-      text-align: center;
-      background-color: transparent;
-      width: 280px;
-      padding: 0px;
-      margin: 50px 10px;
-      border: none;
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-    h1{
-      background-color: purple;
-      font-size: 30px;
-      text-align: center;
-      color: white;
-      width: 280px;
-      padding: 5px 0px;
-      margin: 40px;
-      border-radius: 50px;
-      }
-        form{
-          width:300px;
-        padding: 0px;
-        margin: 0px
-       /* display: grid;
-        grid-template-columns: 1fr;
-    }
-    .container-datosinputs{
-      width:300px;
-      margin: 0px;
-      padding:0px;
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-      .container-datosp{
-        width: 300px;
-        padding: 0px;
-        margin: 0px;
-          border-bottom: 1px solid purple;
-          border-right: none;
-  
-          }
-      input{
-      text-align: left;
-      font-size: 10px;
-      padding:5px 0px 5px 0px;
-      width:40px;
-      margin: 0px;
-      border: none;
-      border-radius: 20px;
-      border-bottom: 1px solid black;
-     background-color:rgb(245, 223, 245);
-  }
-  fieldset input.hora{
-    text-align: center;
-      font-size: 15px;
-      padding:5px 100px;
-      width:200px;
-      margin: 0px;
-      display:grid;
-      grid-template-columns: 1fr;
-      border: none;
-      border-radius: 20px;
-      border-bottom: 1px solid black;
-     background-color:rgb(245, 223, 245);
-  }
-  fieldset{
-    margin: 0px;
-  }
-  
-  }
-@media (max-width: 420px){
-  .container{
-    text-align: center;
-    background-color: transparent;
-    width: 350px;
-    margin: 50px 20px;
-    border: none;
-  }
-  h1{
-    background-color: purple;
-    color: white;
-    padding: 10px;
-    margin: 0px;
-    border-radius: 50px;
-    }
-    .container-datosp{
-        border-bottom: 1px solid purple;
-        border-right: none;
-
-        }
-    input{
-    text-align: left;
-    padding:15px 90px;
-    width:15px 60px 15px 60px;
-    margin: 5px;
-    border: none;
-    border-radius: 20px;
-    border-bottom: 1px solid black;
-   background-color:rgb(245, 223, 245);
-}
-form{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-}
-
-@media (max-width: 620px){
-    .container{
-      text-align: center;
-      background-color: transparent;
-      width: 350;
-      margin: 50px 20px;
-      border: none;
-    }
-    h1{
-      background-color: purple;
-      color: white;
-      padding: 10px;
-      margin: 0px;
-      border-radius: 50px;
-      }
-      .container-datosp{
-        border-bottom: 1px solid purple;
-        border-right: none;
-
-        }
-      input{
-      text-align: left;
-      padding:15px 90px;
-      width:15px 60px 15px 60px;
-      margin: 5px;
-      border: none;
-      border-radius: 20px;
-      border-bottom: 1px solid black;
-     background-color:rgb(245, 223, 245);
-  }
-  form{
-      display: grid;
-      grid-template-columns: 1fr;
-  }
-  }*/
-
